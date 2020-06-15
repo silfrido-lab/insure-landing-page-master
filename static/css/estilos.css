@@ -7,7 +7,7 @@
   background: url(../../images/bg-pattern-mobile-nav.svg) no-repeat, var(--veryDark-Violet);
   background-position: center 100%;
   background-size: contain;
-  height: calc(100vh - 4.4em);
+  height: calc(100vh - 6em);
 }
 .menu ul {
   padding: 0;
