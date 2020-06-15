@@ -4,9 +4,7 @@
   left: 0;
   right: 0;
   top: 100%;
-  background: url(../../images/bg-pattern-mobile-nav.svg) no-repeat, var(--veryDark-Violet);
-  background-position: center 100%;
-  background-size: contain;
+  background: var(--veryDark-Violet);
   height: calc(680px - 6em);
 }
 .menu ul {
@@ -53,6 +51,13 @@
   display: inline-block;
   cursor: pointer;
   background: url(../../images/icon-hamburger.svg) center no-repeat;
+}
+.menu-background {
+  background-image: url(../../images/bg-pattern-mobile-nav.svg);
+  height: calc(680px - 6em);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .header {

@@ -43,3 +43,41 @@ You can use either use the social icons provided or load in a font icon library.
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+
+<input type="checkbox" id="open" class="menu-checkbox">
+  <header class="header">
+    <div class="u-wrapper">
+      <div class="header-content">
+        <!-- <img src="./static/images/logo-bookmark-white.svg" alt=""> -->
+        <a href="#" class="header-logo"></a>
+        <label for="open" class="menu-open"></label>
+        <nav class="menu">
+          <div class="u-wrapper">
+            <ul>
+              <li>
+                <a href="#">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Login
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
