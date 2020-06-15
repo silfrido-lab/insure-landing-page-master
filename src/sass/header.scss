@@ -1,0 +1,14 @@
+@import "./menu";
+.header {
+    padding: 1em 0;
+    background: var(white);
+    position: fixed;
+    left: 0;
+    right: 0;
+    //con left y right 0 va a tomar todo el ancho del contenido de vuelta
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
