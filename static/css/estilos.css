@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   top: 100%;
-  background: var(--veryDark-Violet);
+  background: var(--dark-Violet);
   height: calc(100vh - 4em);
   transform: translateY(-200px);
   transition: 0.9s transform;
@@ -57,6 +57,7 @@
   display: inline-block;
   cursor: pointer;
   background: url(../../images/icon-hamburger.svg) center no-repeat;
+  transition: 0.3s ease;
 }
 .menu-background {
   background-image: url(../../images/bg-pattern-mobile-nav.svg);
@@ -68,7 +69,7 @@
 
 .header {
   padding: 1em 0;
-  background: var(white);
+  background: white;
   position: sticky;
   top: 0;
   left: 0;
@@ -80,11 +81,21 @@
   align-items: center;
 }
 
+.hero-image {
+  background: url(../../images/image-intro-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 445px;
+}
+.hero-content {
+  background: url(../../images/bg-pattern-intro-left-mobile.svg) no-repeat, var(--dark-Violet);
+  padding: 6em 0;
+}
+
 :root {
   --dark-Violet: rgb(45, 38, 64);
   --grayish-Blue: rgb(149, 169, 198);
   --veryDark-Violet: rgb(43, 40, 47);
-  --veryDark-blue: rgb(43, 40, 47);
   --vark-Grayish-Violet: rgb(131, 125, 135);
   --very-Light-Gray: rgb(250, 250, 250);
 }
@@ -110,6 +121,46 @@ body {
 
 .list-style, .menu ul {
   list-style: none;
+}
+
+.u-title, .u-copy {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.7em;
+  text-align: center;
+  color: var(--veryDark-Violet);
+  line-height: 1;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.u-copy {
+  color: white;
+  margin: 0;
+}
+
+.parrago, .u-p {
+  color: var(--vark-Grayish-Violet);
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.u-p {
+  color: white;
+}
+
+.buttom {
+  background: transparent;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 0.6em 1.5em;
+  letter-spacing: 2px;
+  display: block;
+  margin: auto;
+  margin-top: 2em;
 }
 
 /*# sourceMappingURL=estilos.css.map */

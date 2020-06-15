@@ -1,0 +1,13 @@
+.hero {
+    &-image {
+        background: url(../../images/image-intro-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 445px;
+    }
+    &-content {
+        background: url(../../images/bg-pattern-intro-left-mobile.svg) no-repeat, var( --dark-Violet);
+        // border: 1px solid red;
+        padding: 6em 0;
+    }
+}

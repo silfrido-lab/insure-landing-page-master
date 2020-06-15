@@ -6,7 +6,7 @@
     left: 0;
     right: 0;
     top: 100%;
-    background: var(--veryDark-Violet);
+    background: var( --dark-Violet);
     height: calc(100vh - 4em);
     transform: translateY(-200px);
     transition: .9s transform;
@@ -64,6 +64,7 @@
         display: inline-block;
         cursor: pointer;
         background: url(../../images/icon-hamburger.svg) center no-repeat;
+        transition: .3s ease;
     }
     &-background {
         background-image: url(../../images/bg-pattern-mobile-nav.svg);

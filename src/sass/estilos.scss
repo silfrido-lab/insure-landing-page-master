@@ -1,11 +1,11 @@
 @import "./header";
+@import "./hero";
 :root {
     // ### Primary
     --dark-Violet: rgb(45, 38, 64);
     --grayish-Blue: rgb(149, 169, 198);
     // ### Neutral
     --veryDark-Violet: rgb(43, 40, 47);
-    --veryDark-blue: rgb(43, 40, 47);
     --vark-Grayish-Violet: rgb(131, 125, 135);
     --very-Light-Gray: rgb(250, 250, 250);
 }
@@ -33,4 +33,49 @@ body {
 
 .list-style {
     list-style: none;
+}
+
+.u-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.7em;
+    text-align: center;
+    color: var( --veryDark-Violet);
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.u-copy {
+    @extend .u-title;
+    color: white;
+    margin: 0;
+    // margin-top: 2.5em;
+}
+
+.parrago {
+    color: var( --vark-Grayish-Violet);
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.8;
+    // letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.u-p {
+    @extend .parrago;
+    color: white;
+}
+
+.buttom {
+    background: transparent;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: .6em 1.5em;
+    letter-spacing: 2px;
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+    // margin-bottom: 4.7em;
 }
