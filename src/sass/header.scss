@@ -2,7 +2,9 @@
 .header {
     padding: 1em 0;
     background: var(white);
-    position: fixed;
+    position: sticky;
+    top: 0;
+    //usando STICKY y top =0 posiciona los textos debajo y no detras
     left: 0;
     right: 0;
     //con left y right 0 va a tomar todo el ancho del contenido de vuelta

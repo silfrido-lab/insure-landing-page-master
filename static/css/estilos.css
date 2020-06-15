@@ -1,11 +1,15 @@
 .menu {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   left: 0;
   right: 0;
   top: 100%;
   background: var(--veryDark-Violet);
   height: calc(100vh - 4em);
+  transform: translateY(-200px);
+  transition: 0.9s transform;
+  will-change: transform;
 }
 .menu ul {
   padding: 0;
@@ -42,7 +46,9 @@
   user-select: none;
 }
 .menu-checkbox:checked ~ .menu {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 .menu-open {
   user-select: none;
@@ -63,7 +69,8 @@
 .header {
   padding: 1em 0;
   background: var(white);
-  position: fixed;
+  position: sticky;
+  top: 0;
   left: 0;
   right: 0;
 }
