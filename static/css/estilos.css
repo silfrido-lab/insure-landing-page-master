@@ -5,7 +5,7 @@
   right: 0;
   top: 100%;
   background: var(--veryDark-Violet);
-  height: calc(680px - 6em);
+  height: 100vh;
 }
 .menu ul {
   padding: 0;
@@ -54,10 +54,10 @@
 }
 .menu-background {
   background-image: url(../../images/bg-pattern-mobile-nav.svg);
-  height: calc(680px - 6em);
+  height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center 87%;
 }
 
 .header {
