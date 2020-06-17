@@ -6,8 +6,15 @@
         height: 445px;
     }
     &-content {
-        background: url(../../images/bg-pattern-intro-left-mobile.svg) no-repeat, var( --dark-Violet);
+        background: var( --dark-Violet);
         // border: 1px solid red;
         padding: 6em 0;
+        position: relative;
+    }
+    &-content::before {
+        content: url(../../images/bg-pattern-intro-left-mobile.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }

@@ -7,14 +7,18 @@
   top: 100%;
   background: var(--dark-Violet);
   height: calc(90vh - 4em);
-  transform: translateY(-200px);
-  transition: 0.9s transform;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  -webkit-transition: .9s transform;
+  transition: .9s transform;
   will-change: transform;
 }
+
 .menu ul {
   padding: 0;
   margin: 0;
 }
+
 .menu ul a {
   color: white;
   text-decoration: none;
@@ -24,40 +28,55 @@
   font-size: 1.2em;
   letter-spacing: 2px;
 }
+
 .menu ul li {
   padding: 1.2em;
 }
+
 .menu ul li:last-child {
   border: 1.5px solid var(--very-Light-Gray);
-  margin-top: 0.8em;
-  padding: 0.8em;
+  margin-top: .8em;
+  padding: .8em;
 }
+
 .menu ul li:first-child {
   padding-top: 3em;
 }
+
 .menu-checkbox {
   display: none;
 }
+
 .menu-checkbox:checked ~ .menu-open {
   width: 40px;
   height: 40px;
   display: inline-block;
   background: url(../../images/icon-close.svg) center no-repeat;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
+
 .menu-checkbox:checked ~ .menu {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
+
 .menu-open {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 40px;
   height: 40px;
   display: inline-block;
   cursor: pointer;
   background: url(../../images/icon-hamburger.svg) center no-repeat;
 }
+
 .menu-background {
   background-image: url(../../images/bg-pattern-mobile-nav.svg);
   height: calc(90vh - 4em);
@@ -69,15 +88,23 @@
 .header {
   padding: 1em 0;
   background: white;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
 }
+
 .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero-image {
@@ -86,11 +113,13 @@
   background-size: cover;
   height: 445px;
 }
+
 .hero-content {
   background: var(--dark-Violet);
   padding: 6em 0;
   position: relative;
 }
+
 .hero-content::before {
   content: url(../../images/bg-pattern-intro-left-mobile.svg);
   position: absolute;
@@ -114,15 +143,22 @@
 
 body {
   margin: 0;
-  box-sizing: border-box;
-  font-family: "Karla", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
   font-size: 16px;
 }
 
 .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .u-wrapper {
@@ -135,8 +171,8 @@ body {
   list-style: none;
 }
 
-.u-title, .u-sub, .u-h3 {
-  font-family: "DM Serif Display", serif;
+.u-title, .u-h3, .u-sub {
+  font-family: 'DM Serif Display', serif;
   font-size: 2.7em;
   text-align: center;
   color: var(--veryDark-Violet);
@@ -175,7 +211,7 @@ body {
   margin: 0 auto;
 }
 
-.parrago, .u-parrafo, .u-p {
+.parrago, .u-p, .u-parrafo {
   color: var(--vark-Grayish-Violet);
   font-size: 1em;
   text-align: center;
@@ -198,7 +234,7 @@ body {
   font-size: 1em;
   text-transform: uppercase;
   border: 2px solid white;
-  padding: 0.6em 1.5em;
+  padding: .6em 1.5em;
   letter-spacing: 2px;
   display: block;
   margin: auto;
@@ -208,5 +244,4 @@ body {
 .is-hidden {
   display: none;
 }
-
 /*# sourceMappingURL=estilos.css.map */

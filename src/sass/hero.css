@@ -1,0 +1,20 @@
+.hero-image {
+  background: url(../../images/image-intro-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 445px;
+}
+
+.hero-content {
+  background: var(--dark-Violet);
+  padding: 6em 0;
+  position: relative;
+}
+
+.hero-content::before {
+  content: url(../../images/bg-pattern-intro-left-mobile.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=hero.css.map */
