@@ -121,7 +121,8 @@
 }
 
 .hero-content::before {
-  content: url(../../images/bg-pattern-intro-left-mobile.svg);
+  content: "";
+  background-image: url(../../images/bg-pattern-intro-left-mobile.svg);
   position: absolute;
   top: 0;
   left: 0;
@@ -171,7 +172,7 @@ body {
   list-style: none;
 }
 
-.u-title, .u-h3, .u-sub {
+.u-title, .u-copy, .u-h3, .u-sub {
   font-family: 'DM Serif Display', serif;
   font-size: 2.7em;
   text-align: center;

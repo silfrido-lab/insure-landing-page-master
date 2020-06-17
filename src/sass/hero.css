@@ -12,9 +12,13 @@
 }
 
 .hero-content::before {
-  content: url(../../images/bg-pattern-intro-left-mobile.svg);
+  content: "";
+  background-image: url(../../images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=hero.css.map */

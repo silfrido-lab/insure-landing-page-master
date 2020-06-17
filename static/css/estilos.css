@@ -92,10 +92,14 @@
   position: relative;
 }
 .hero-content::before {
-  content: url(../../images/bg-pattern-intro-left-mobile.svg);
+  content: "";
+  background-image: url(../../images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .we {
@@ -135,7 +139,7 @@ body {
   list-style: none;
 }
 
-.u-title, .u-sub, .u-h3 {
+.u-title, .u-sub, .u-h3, .u-copy {
   font-family: "DM Serif Display", serif;
   font-size: 2.7em;
   text-align: center;
