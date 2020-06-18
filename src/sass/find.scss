@@ -1,0 +1,19 @@
+.find {
+    // border: 1px solid red;
+    text-align: center;
+    background: var(--dark-Violet);
+    &-background {
+        padding: 6em 0;
+        border: 1px solid red;
+        background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &-title {
+        margin-bottom: 1em;
+    }
+    .buttom {
+        padding: .8em 1.5em;
+    }
+}

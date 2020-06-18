@@ -8,6 +8,7 @@
     left: 0;
     right: 0;
     //con left y right 0 va a tomar todo el ancho del contenido de vuelta
+    z-index: 100;
     &-content {
         display: flex;
         justify-content: space-between;

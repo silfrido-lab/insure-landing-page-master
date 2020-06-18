@@ -73,6 +73,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 .header-content {
   display: flex;
@@ -99,6 +100,36 @@
 .we {
   text-align: center;
   padding: 6em 0;
+}
+.we .u-sub::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: var(--vark-Grayish-Violet);
+  width: 42%;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.find {
+  text-align: center;
+  background: var(--dark-Violet);
+}
+.find-background {
+  padding: 6em 0;
+  border: 1px solid red;
+  background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.find-title {
+  margin-bottom: 1em;
+}
+.find .buttom {
+  padding: 0.8em 1.5em;
 }
 
 :root {
@@ -132,7 +163,7 @@ body {
   list-style: none;
 }
 
-.u-title, .u-sub, .u-h3, .u-copy {
+.u-title, .u-h3, .find-title, .u-sub, .u-copy {
   font-family: "DM Serif Display", serif;
   font-size: 2.7em;
   text-align: center;
@@ -147,29 +178,23 @@ body {
   margin: 0;
 }
 
-.u-h3 {
-  font-size: 1.8em;
-  letter-spacing: 0;
-}
-
 .u-sub {
   font-weight: 700;
   padding: 1em 0;
   position: relative;
   font-size: 2.7em;
   letter-spacing: 0;
+  z-index: 10;
 }
 
-.u-sub::before {
-  content: "";
-  position: absolute;
-  height: 1px;
-  background: var(--vark-Grayish-Violet);
-  width: 42%;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
+.find-title {
+  color: white;
+  margin: 0;
+}
+
+.u-h3 {
+  font-size: 1.8em;
+  letter-spacing: 0;
 }
 
 .parrago, .u-parrafo, .u-p {

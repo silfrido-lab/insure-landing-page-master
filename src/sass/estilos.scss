@@ -1,6 +1,7 @@
 @import "./header";
 @import "./hero";
 @import "./we";
+@import "./find";
 :root {
     // ### Primary
     --dark-Violet: rgb(45, 38, 64);
@@ -53,12 +54,6 @@ body {
     // margin-top: 2.5em;
 }
 
-.u-h3 {
-    @extend .u-title;
-    font-size: 1.8em;
-    letter-spacing: 0;
-}
-
 .u-sub {
     @extend .u-title;
     font-weight: 700;
@@ -67,19 +62,19 @@ body {
     position: relative;
     font-size: 2.7em;
     letter-spacing: 0;
+    z-index: 10;
 }
 
-.u-sub::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    background: var(--vark-Grayish-Violet);
-    width: 42%;
-    // transform: translateX(50%);
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
+.find-title {
+    @extend .u-title;
+    color: white;
+    margin: 0;
+}
+
+.u-h3 {
+    @extend .u-title;
+    font-size: 1.8em;
+    letter-spacing: 0;
 }
 
 .parrago {
