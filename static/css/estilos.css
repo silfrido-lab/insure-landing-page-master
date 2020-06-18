@@ -6,7 +6,7 @@
   right: 0;
   top: 100%;
   background: var(--dark-Violet);
-  height: calc(90vh - 4em);
+  height: calc(100vh - 4em);
   transform: translateY(-200px);
   transition: 0.9s transform;
   will-change: transform;
@@ -60,7 +60,7 @@
 }
 .menu-background {
   background-image: url(../../images/bg-pattern-mobile-nav.svg);
-  height: calc(90vh - 4em);
+  height: calc(100vh - 4em);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center 100%;
@@ -118,7 +118,7 @@
   background: var(--dark-Violet);
 }
 .find-background {
-  padding: 6em 0;
+  padding: 5.5em 0;
   border: 1px solid red;
   background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
   background-position: top right;

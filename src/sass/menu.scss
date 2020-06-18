@@ -7,7 +7,7 @@
     right: 0;
     top: 100%;
     background: var( --dark-Violet);
-    height: calc(90vh - 4em);
+    height: calc(100vh - 4em);
     transform: translateY(-200px);
     transition: .9s transform;
     will-change: transform;
@@ -68,7 +68,7 @@
     }
     &-background {
         background-image: url(../../images/bg-pattern-mobile-nav.svg);
-        height: calc(90vh - 4em);
+        height: calc(100vh - 4em);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center 100%;
