@@ -2,6 +2,7 @@
 @import "./hero";
 @import "./we";
 @import "./find";
+@import "./footer";
 :root {
     // ### Primary
     --dark-Violet: rgb(45, 38, 64);
@@ -69,6 +70,7 @@ body {
     @extend .u-title;
     color: white;
     margin: 0;
+    font-size: 2.6em;
 }
 
 .u-h3 {

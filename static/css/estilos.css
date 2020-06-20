@@ -114,21 +114,69 @@
 }
 
 .find {
+  padding: 0 1.5em;
   text-align: center;
-  background: var(--dark-Violet);
 }
 .find-background {
   padding: 5.5em 0;
   background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 60%;
+  background-color: var(--dark-Violet);
 }
 .find-title {
   margin-bottom: 1em;
 }
 .find .buttom {
   padding: 0.8em 1.5em;
+}
+
+.footer {
+  padding: 6em 0 4em 0;
+  text-align: center;
+  background-image: url(../../images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  margin-top: 8em;
+  background-color: var(--very-Light-Gray);
+}
+.footer-social ul {
+  list-style: none;
+  padding: 0.2em 0 2.5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--vark-Grayish-Violet);
+}
+.footer-social ul li {
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+.footer-social ul li:first-child {
+  margin-left: 0.5em;
+}
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-item ul a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0.5em 0;
+  display: block;
+  text-transform: uppercase;
+  color: var(--veryDark-Violet);
+}
+.footer-item ul li:nth-child(1) {
+  padding: 1.2em 0;
+}
+.footer-item ul .gray {
+  color: var(--vark-Grayish-Violet);
 }
 
 :root {
@@ -189,6 +237,7 @@ body {
 .find-title {
   color: white;
   margin: 0;
+  font-size: 2.6em;
 }
 
 .u-h3 {

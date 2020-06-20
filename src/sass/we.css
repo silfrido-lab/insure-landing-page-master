@@ -2,4 +2,16 @@
   text-align: center;
   padding: 6em 0;
 }
+
+.we .u-sub::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: var(--vark-Grayish-Violet);
+  width: 42%;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=we.css.map */

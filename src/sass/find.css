@@ -1,0 +1,22 @@
+.find {
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+.find-background {
+  padding: 5.5em 0;
+  background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-color: var(--dark-Violet);
+}
+
+.find-title {
+  margin-bottom: 1em;
+}
+
+.find .buttom {
+  padding: .8em 1.5em;
+}
+/*# sourceMappingURL=find.css.map */

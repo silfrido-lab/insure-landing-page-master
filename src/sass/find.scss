@@ -1,14 +1,15 @@
 .find {
     // border: 1px solid red;
+    padding: 0 1.5em;
     text-align: center;
-    background: var(--dark-Violet);
     &-background {
         padding: 5.5em 0;
         // border: 1px solid red;
         background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
         background-position: top right;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 60%;
+        background-color: var(--dark-Violet);
     }
     &-title {
         margin-bottom: 1em;
