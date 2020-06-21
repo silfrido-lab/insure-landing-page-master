@@ -98,6 +98,7 @@
 }
 
 .we {
+  position: relative;
   text-align: center;
   padding: 6em 0;
 }
@@ -111,6 +112,13 @@
   right: 0;
   left: 0;
   margin: 0 auto;
+}
+
+.we::before {
+  content: url(../../images/bg-pattern-intro-right-mobile.svg);
+  position: absolute;
+  top: -11%;
+  right: 0;
 }
 
 .find {
