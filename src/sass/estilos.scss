@@ -29,12 +29,12 @@ body {
 }
 
 .u-wrapper {
-    max-width: 1440px;
+    max-width: 1110px;
     margin: auto;
     padding: 0 1.5em;
-    @media screen and (min-width: 1024px) {
-        width: 1110px;
-    }
+    // @media screen and (min-width: 1024px) {
+    //     width: 1110px;
+    // }
 }
 
 .list-style {
@@ -55,6 +55,7 @@ body {
     @extend .u-title;
     color: white;
     margin: 0;
+    text-align: center;
     // margin-top: 2.5em;
 }
 
@@ -92,17 +93,25 @@ body {
 }
 
 .buttom {
-    background: transparent;
+    background: none;
     color: white;
     font-size: 1em;
     text-transform: uppercase;
-    border: 2px solid white;
-    padding: .6em 1.5em;
+    outline: none;
+    border: none;
     letter-spacing: 2px;
     display: block;
     margin: auto;
     margin-top: 2em;
     // margin-bottom: 4.7em;
+    small {
+        padding: .6em 1.5em;
+        border: 2px solid white;
+    }
+    small:hover {
+        background: white;
+        color: var(--dark-Violet);
+    }
 }
 
 .is-hidden {

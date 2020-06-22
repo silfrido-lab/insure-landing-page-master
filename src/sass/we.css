@@ -76,7 +76,10 @@
 
 @media screen and (min-width: 1024px) {
   .we::before {
-    display: none;
+    content: url(../../images/bg-pattern-intro-left-desktop.svg);
+    position: absolute;
+    top: -40%;
+    left: -86%;
   }
 }
 /*# sourceMappingURL=we.css.map */

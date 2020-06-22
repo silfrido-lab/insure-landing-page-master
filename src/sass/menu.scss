@@ -14,7 +14,7 @@
     ul {
         padding: 0;
         margin: 0;
-        @extend .list-style;
+        @extend .list-style !optional;
         a {
             color: white;
             text-decoration: none;
@@ -31,10 +31,35 @@
                 border: 1.5px solid var(--very-Light-Gray);
                 margin-top: .8em;
                 padding: .8em;
+                @media screen and (min-width: 1024px) {
+                    margin: 0;
+                    border: 2px solid var(--dark-Violet);
+                    padding: 0;
+                    a {
+                        padding: 1em 1.9em;
+                        margin: 0;
+                        color: var(--dark-Violet);
+                    }
+                    &:last-child:hover {
+                        a:hover {
+                            background: var(--dark-Violet);
+                            color: white;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+            a:hover {
+                color: var( --dark-Violet);
+                transition: .3s;
             }
             &:first-child {
                 padding-top: 3em;
                 // border: 1px solid red;
+                @media screen and (min-width: 1024px) {
+                    padding: 0;
+                    margin: 0;
+                }
             }
         }
     }
@@ -72,5 +97,41 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center 100%;
+    }
+    @media screen and (min-width:1024px) {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        position: initial;
+        // border: 1px solid green;
+        height: auto;
+        background: none;
+        &-background {
+            height: auto;
+            background-image: none;
+            .u-wrapper {
+                padding: 0;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                li {
+                    padding: 0;
+                    margin: 0;
+                }
+                a {
+                    color: var( --vark-Grayish-Violet);
+                    font-weight: 700;
+                    // border: 1px solid red;
+                    font-size: 1em;
+                    margin-right: 2em;
+                }
+            }
+        }
+        &-checkbox,
+        &-open {
+            display: none;
+        }
     }
 }

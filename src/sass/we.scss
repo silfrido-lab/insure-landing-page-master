@@ -67,7 +67,10 @@
     top: -11%;
     right: 0;
     @media screen and (min-width: 1024px) {
-        display: none;
+        content: url(../../images/bg-pattern-intro-left-desktop.svg);
+        position: absolute;
+        top: -40%;
+        left: -86%;
     }
     // border: 1px solid red;
 }
