@@ -15,4 +15,69 @@
   background-repeat: no-repeat;
   background-position: 0 top;
 }
+
+.hero-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 600px;
+    background-color: var(--dark-Violet);
+    margin-bottom: 9em;
+    background-image: url(../../images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  .hero-container {
+    width: 1440px;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  .hero .u-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-svg {
+    background: none;
+  }
+  .hero-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero-content {
+    background: none;
+  }
+  .hero-left {
+    padding-right: 2em;
+  }
+  .hero-left h1 {
+    font-size: 4.5em;
+  }
+  .hero-left p {
+    text-align: left;
+    padding-top: 1em;
+  }
+  .hero-left .buttom {
+    margin: 0;
+    margin-top: 2em;
+  }
+  .hero-desktop {
+    display: block;
+    width: 540px;
+    height: 600px;
+  }
+  .hero-desktop img {
+    margin-top: 1em;
+  }
+}
 /*# sourceMappingURL=hero.css.map */

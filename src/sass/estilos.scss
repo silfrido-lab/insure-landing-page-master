@@ -29,9 +29,12 @@ body {
 }
 
 .u-wrapper {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: auto;
     padding: 0 1.5em;
+    @media screen and (min-width: 1024px) {
+        width: 1110px;
+    }
 }
 
 .list-style {
@@ -41,7 +44,7 @@ body {
 .u-title {
     font-family: 'DM Serif Display', serif;
     font-size: 2.7em;
-    text-align: center;
+    // text-align: center;
     color: var( --veryDark-Violet);
     line-height: 1;
     letter-spacing: 1px;
@@ -53,17 +56,6 @@ body {
     color: white;
     margin: 0;
     // margin-top: 2.5em;
-}
-
-.u-sub {
-    @extend .u-title;
-    font-weight: 700;
-    // border: 1px solid red;
-    padding: 1em 0;
-    position: relative;
-    font-size: 2.7em;
-    letter-spacing: 0;
-    z-index: 10;
 }
 
 .find-title {

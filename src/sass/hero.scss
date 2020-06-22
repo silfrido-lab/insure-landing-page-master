@@ -15,4 +15,59 @@
         background-repeat: no-repeat;
         background-position: 0 top;
     }
+    &-desktop {
+        display: none;
+    }
+    @media screen and (min-width:1024px) {
+        height: 600px;
+        background-color: var( --dark-Violet);
+        margin-bottom: 9em;
+        background-image: url(../../images/bg-pattern-intro-right-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        &-container {
+            width: 1440px;
+            max-width: 1110px;
+            margin: 0 auto;
+        }
+        .u-wrapper {
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+        &-image {
+            display: none;
+        }
+        &-svg {
+            background: none;
+        }
+        &-grid {
+            display: flex;
+        }
+        &-content {
+            background: none;
+        }
+        &-left {
+            padding-right: 2em;
+            h1 {
+                font-size: 4.5em;
+            }
+            p {
+                text-align: left;
+                padding-top: 1em;
+            }
+            .buttom {
+                margin: 0;
+                margin-top: 2em;
+            }
+        }
+        &-desktop {
+            display: block;
+            width: 540px;
+            height: 600px;
+            img {
+                margin-top: 1em;
+            }
+        }
+    }
 }

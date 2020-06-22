@@ -51,4 +51,42 @@
             }
         }
     }
+    @media screen and (min-width: 1024px) {
+        background-image: url(../../images/bg-pattern-footer-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 40% 55%;
+        // border: 1px solid red;
+        padding-top: 4em;
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-bottom: 1em;
+            border-bottom: 1px solid var(--vark-Grayish-Violet);
+        }
+        &-social {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0;
+            ul {
+                border: none;
+                padding: 0;
+            }
+        }
+        &-logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0;
+        }
+        &-item {
+            text-align: left;
+            padding-top: 1em;
+        }
+    }
 }
