@@ -93,25 +93,22 @@ body {
 }
 
 .buttom {
-    background: none;
-    color: white;
-    font-size: 1em;
+    cursor: pointer;
+    background: transparent;
+    color: var(--very-Light-Gray);
+    font-size: .8em;
     text-transform: uppercase;
-    outline: none;
-    border: none;
+    border: 1px solid var(--very-Light-Gray);
     letter-spacing: 2px;
-    display: block;
-    margin: auto;
-    margin-top: 2em;
+    margin-top: 1.2em;
+    padding: .6em 1.6em;
     // margin-bottom: 4.7em;
-    small {
-        padding: .6em 1.5em;
-        border: 2px solid white;
-    }
-    small:hover {
-        background: white;
-        color: var(--dark-Violet);
-    }
+    display: inline-block;
+}
+
+.buttom:hover {
+    background: white;
+    color: var(--dark-Violet);
 }
 
 .is-hidden {

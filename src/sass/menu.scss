@@ -36,7 +36,7 @@
                     border: 2px solid var(--dark-Violet);
                     padding: 0;
                     a {
-                        padding: 1em 1.9em;
+                        padding: .7em 1.9em;
                         margin: 0;
                         color: var(--dark-Violet);
                     }
@@ -50,7 +50,8 @@
                 }
             }
             a:hover {
-                color: var( --dark-Violet);
+                color: var(--dark-Violet);
+                background: var( --very-Light-Gray);
                 transition: .3s;
             }
             &:first-child {
@@ -126,6 +127,10 @@
                     // border: 1px solid red;
                     font-size: 1em;
                     margin-right: 2em;
+                }
+                a:hover {
+                    color: var( --dark-Violet);
+                    transition: .3s;
                 }
             }
         }

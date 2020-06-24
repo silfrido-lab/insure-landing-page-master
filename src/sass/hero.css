@@ -20,6 +20,19 @@
   display: none;
 }
 
+.hero-left {
+  text-align: center;
+}
+
+.hero-left .content-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media screen and (min-width: 1024px) {
   .hero {
     height: 600px;
@@ -53,6 +66,14 @@
   }
   .hero-left {
     padding-right: 2em;
+  }
+  .hero-left .content-buttom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .hero-left .u-copy {
     text-align: left;

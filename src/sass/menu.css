@@ -46,7 +46,7 @@
     padding: 0;
   }
   .menu ul li:last-child a {
-    padding: 1em 1.9em;
+    padding: .7em 1.9em;
     margin: 0;
     color: var(--dark-Violet);
   }
@@ -60,6 +60,7 @@
 
 .menu ul li a:hover {
   color: var(--dark-Violet);
+  background: var(--very-Light-Gray);
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -153,6 +154,11 @@
     font-weight: 700;
     font-size: 1em;
     margin-right: 2em;
+  }
+  .menu-background ul a:hover {
+    color: var(--dark-Violet);
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .menu-checkbox, .menu-open {
     display: none;

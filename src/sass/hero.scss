@@ -18,6 +18,13 @@
     &-desktop {
         display: none;
     }
+    &-left {
+        text-align: center;
+        .content-buttom {
+            display: flex;
+            justify-content: center;
+        }
+    }
     @media screen and (min-width:1024px) {
         height: 600px;
         background-color: var( --dark-Violet);
@@ -46,6 +53,10 @@
         }
         &-left {
             padding-right: 2em;
+            .content-buttom {
+                display: flex;
+                justify-content: start;
+            }
             .u-copy {
                 text-align: left;
                 padding-top: 1em;

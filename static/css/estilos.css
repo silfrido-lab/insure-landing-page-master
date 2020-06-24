@@ -39,7 +39,7 @@
     padding: 0;
   }
   .menu ul li:last-child a {
-    padding: 1em 1.9em;
+    padding: 0.7em 1.9em;
     margin: 0;
     color: var(--dark-Violet);
   }
@@ -51,6 +51,7 @@
 }
 .menu ul li a:hover {
   color: var(--dark-Violet);
+  background: var(--very-Light-Gray);
   transition: 0.3s;
 }
 .menu ul li:first-child {
@@ -123,6 +124,10 @@
     font-size: 1em;
     margin-right: 2em;
   }
+  .menu-background ul a:hover {
+    color: var(--dark-Violet);
+    transition: 0.3s;
+  }
   .menu-checkbox, .menu-open {
     display: none;
   }
@@ -167,6 +172,13 @@
 .hero-desktop {
   display: none;
 }
+.hero-left {
+  text-align: center;
+}
+.hero-left .content-buttom {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 1024px) {
   .hero {
     height: 600px;
@@ -196,6 +208,10 @@
   }
   .hero-left {
     padding-right: 2em;
+  }
+  .hero-left .content-buttom {
+    display: flex;
+    justify-content: start;
   }
   .hero-left .u-copy {
     text-align: left;
@@ -524,22 +540,19 @@ body {
 }
 
 .buttom {
-  background: none;
-  color: white;
-  font-size: 1em;
+  cursor: pointer;
+  background: transparent;
+  color: var(--very-Light-Gray);
+  font-size: 0.8em;
   text-transform: uppercase;
-  outline: none;
-  border: none;
+  border: 1px solid var(--very-Light-Gray);
   letter-spacing: 2px;
-  display: block;
-  margin: auto;
-  margin-top: 2em;
+  margin-top: 1.2em;
+  padding: 0.6em 1.6em;
+  display: inline-block;
 }
-.buttom small {
-  padding: 0.6em 1.5em;
-  border: 2px solid white;
-}
-.buttom small:hover {
+
+.buttom:hover {
   background: white;
   color: var(--dark-Violet);
 }
